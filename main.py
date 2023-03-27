@@ -20,7 +20,7 @@ def parse_word(word: str) -> str:
     result = f"{first_letter}{letter_count}{last_letter}"
     return result
 
-def parse_sentence(sentence: str) -> None:
+def parse_sentence(sentence: str) -> str:
     pattern = r"[^A-Za-z]"
     if re.search(pattern, sentence) is not None:
         sep_index = re.search(pattern, sentence).start()
